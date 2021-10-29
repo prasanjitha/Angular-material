@@ -1,0 +1,289 @@
+<!-- <div>
+  <mat-toolbar color="primary" class="navbar">
+    <div>NS</div>
+    <div>
+      <span>Home</span>
+      <span>about</span>
+      <span>Service</span>
+    </div>
+  </mat-toolbar>
+</div> -->
+
+
+<!--   <mat-sidenav-container>
+    <mat-sidenav mode="side" #sidenav [(opened)]="opened" (opened)="log('opened')" (closed)="log('closed')">Sidenav
+      <span>About</span>
+    </mat-sidenav>
+    <mat-sidenav-content>Main
+      <button (click)="opened=!opened">Toggle Button</button>
+      <button (click)="sidenav.open()">Open</button>
+      <button (click)="sidenav.close()">close</button>
+      <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->
+
+<!--   <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">About</button>
+    <button mat-menu-item>contact</button>
+  </mat-menu>
+
+  <button claas="center" mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>About</button>
+    <button mat-menu-item>contact</button>
+  </mat-menu>
+
+  <mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-name="name">
+      <button mat-menu-item>Setting</button>
+      <button mat-menu-item>Log Out {{name}}</button>
+    </ng-template>
+  </mat-menu>
+  <button
+   mat-raised-button
+   [matMenuTriggerData]="{name:'Nirmal'}"
+   [matMenuTriggerFor]="lazyMenu">
+  Nirmal
+  </button>
+  <button
+  mat-raised-button
+  [matMenuTriggerData]="{name:'Prasanjitha'}"
+  [matMenuTriggerFor]="lazyMenu">
+Prasanjitha
+ </button> -->
+
+
+
+
+<!-- <div>
+  <button mat-button>click Me!</button>
+  <button mat-flat-button>Click Me!</button>
+  <button mat-stroked-button>Click Me!</button>
+</div>
+<div>
+  <button mat-icon-button>Icon</button>
+  <button mat-fab>Fab</button>
+  <button mat-mini-fab>Minifab</button>
+</div>
+
+<div>
+  <button mat-button color="primary">click Me!</button>
+  <button mat-flat-button color="primary">Click Me!</button>
+  <button mat-stroked-button color="primary" disableRipple>Click Me!</button>
+</div>
+
+<div>
+  <mat-button-toggle #toggleBtn checked>Toggele</mat-button-toggle>
+  {{toggleBtn.checked}}
+</div>
+
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="flour">Flour</mat-button-toggle>
+    <mat-button-toggle value="eggs">Eggs</mat-button-toggle>
+    <mat-button-toggle value="sugar">Sugar</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
+
+<div>
+  <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>
+</div>
+
+<div>
+  <p>
+    <span matBadge="4" matBadgePossition="below before">Text with a badge</span>
+  </p>
+
+  <p>
+    <span matBadge="5">badge</span>
+  </p>
+  <p>
+    <span [matBadge]="notification" [matBadgeHidden]="notification===0" matBadgeSize="large" matBadgeColor="warn"
+      matBadgeOverlap="false">badge</span>
+  </p>
+
+</div>
+
+<div>
+<mat-progress-spinner value="100"></mat-progress-spinner>
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
+<button (click)="loadData()">Click</button>
+</div> -->
+
+<!-- list -->
+<!-- <mat-list dense>
+  <mat-list-item >Item 1</mat-list-item>
+  <mat-list-item>Item 2</mat-list-item>
+  <mat-list-item >Item 3</mat-list-item>
+</mat-list>
+
+<mat-nav-list dense>
+  <mat-list-item href="#" >Item 1</mat-list-item>
+  <mat-list-item href="#" >Item 2</mat-list-item>
+  <mat-list-item href="#"  >Item 3</mat-list-item>
+</mat-nav-list>
+
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let shoe of typesOfShoes">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Options selected: {{shoes.selectedOptions.selected.length}}
+</p>
+
+<mat-selection-list #shoes [multiple]="false">
+  <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Option selected: {{shoes.selectedOptions.selected[0]?.value}}
+</p>
+
+<mat-list>
+  <mat-list-item>
+    <mat-icon matListIcon>home</mat-icon>
+    <h3 matLine>Heading</h3>
+    <p matLine>Line</p>
+  </mat-list-item>
+<mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon matListIcon>home</mat-icon>
+    <h3 matLine>Heading</h3>
+    <p matLine>Line</p>
+  </mat-list-item>
+</mat-list> -->
+
+
+
+<!-- Input -->
+
+<!-- <div>
+  <mat-form-field floatLabel="auto" >
+    <mat-label>Name</mat-label>
+    <input matInput required>
+    <mat-hint align="end">Min 5 charactor</mat-hint>
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field floatLabel="auto" appearance="fill" >
+    <mat-label>Name</mat-label>
+    <input matInput required>
+    <mat-hint align="end">Min 5 charactor</mat-hint>
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field floatLabel="auto" appearance="outline" >
+    <mat-label>Name</mat-label>
+    <input matInput required>
+    <mat-hint align="end">Min 5 charactor</mat-hint>
+  </mat-form-field>
+</div> -->
+
+<!-- <mat-form-field>
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option >None</mat-option>
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="react">React</mat-option>
+  </mat-select>
+</mat-form-field>
+{{selectedValue}}
+
+
+<mat-form-field>
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue">
+    <mat-option >None</mat-option>
+    <mat-optgroup label="web">
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="react">React</mat-option>
+  </mat-optgroup>
+  <mat-optgroup label="web">
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="react">React</mat-option>
+  </mat-optgroup>
+  </mat-select>
+</mat-form-field>
+{{selectedValue}} -->
+
+
+<!-- <form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" [formControl]="myControl"/>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of filterOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+<mat-checkbox color="warn">
+  mark
+</mat-checkbox>
+<br>
+<mat-checkbox labelPosition="before">
+  mark
+</mat-checkbox> -->
+
+<!--
+<mat-radio-group >
+  <mat-radio-button color="primary" class="example-margin" value="after">After</mat-radio-button>
+  <mat-radio-button class="example-margin" value="before">Before</mat-radio-button>
+</mat-radio-group> -->
+
+<!-- <mat-form-field>
+  <input matInput [matDatepicker]="myDatePicker">
+  <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #myDatePicker></mat-datepicker>
+</mat-form-field> -->
+
+<!-- <button mat-raised-button
+matTooltipPosition="before"
+ matTooltip="matTooltip"
+ matTooltipShowDelay="2000"
+ matTooltipHideDelay="3000"
+>Hello</button>
+
+<button mat-button (click)="openSnackBar('ItemDeleted','Dismis')">
+  Show snak-bar
+</button> -->
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+  <!-- Position Column -->
+  <ng-container matColumnDef="demo-position">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="demo-name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="demo-weight">
+    <th mat-header-cell *matHeaderCellDef> Weight </th>
+    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="demo-symbol">
+    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
